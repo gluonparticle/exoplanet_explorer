@@ -2,13 +2,16 @@ import streamlit as st
 import pandas as pd
 import requests
 
-st.set_page_config(page_title="Exoplanet Explorer", layout="wide", page_icon="🪐", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Exoplanet Explorer", layout="wide",
+                   page_icon="🪐", initial_sidebar_state="expanded")
 
 st.markdown("""
     <style>
     body, .stApp { background-color: #0d1117; color: #c9d1d9; }
-    .stButton>button { background: linear-gradient(90deg, #00E5FF 0%, #007BFF 100%); color: white; border-radius: 5px; border: none; font-weight: bold; width: 100%; }
-    .metric-card { background-color: #161b22; padding: 20px; border-radius: 8px; border-left: 4px solid #00E5FF; margin-bottom: 20px; }
+    .stButton>button { background: linear-gradient(90deg, #00E5FF 0%, #007BFF 100%);
+    color: white; border-radius: 5px; border: none; font-weight: bold; width: 100%; }
+    .metric-card { background-color: #161b22; padding: 20px; border-radius: 8px;
+    border-left: 4px solid #00E5FF; margin-bottom: 20px; }
     </style>
 """, unsafe_allow_html=True)
 
